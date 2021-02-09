@@ -1,0 +1,2 @@
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/philosophicalSchool> <http://dbpedia.org/resource/Peripatetic_school> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/philosophicalSchool> <http://dbpedia.org/resource/Aristotelianism> .
