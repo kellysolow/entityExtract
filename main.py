@@ -10,6 +10,8 @@ while True:
     if triple[0].startswith('<http://dbpedia.org/resource/'):
         data = triple[0].lstrip('<http://dbpedia.org/resource/').rstrip('>')
         f2.write("".join(data) + ' ')
+
+
     if triple[2].startswith('<'):
         if triple[2].startswith('<http://dbpedia.org/resource/'):
             data = triple[2].lstrip('<http://dbpedia.org/resource/').rstrip('>')
@@ -17,6 +19,10 @@ while True:
             data = triple[2]
         f2.write("".join(data) + '\n')
     else:
+        if '<http:' in triple[2]:
+            data = triple[2]
+            f2.write("".join(data))
+
         f2.write('\n')
 f.close()
 f2.close()
